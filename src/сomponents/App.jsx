@@ -34,7 +34,7 @@ const App = () => {
           type="text"
           className={styles.form__input}
         />
-        {!inputValue ? null : (
+        {inputValue && (
           <div
             onClick={() => setInputValue("")}
             className={styles.input__value__delete}
@@ -44,7 +44,7 @@ const App = () => {
         )}
       </div>
 
-      {!openModal ? null : (
+      {openModal && (
         <div className={styles.modal__window} ref={ref}>
           {filtered.map((animal, index) => {
             return (
