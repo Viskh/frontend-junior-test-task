@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.container__form {
+  width: 100%;
+  position: relative;
+}
+
+.form__input {
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  padding: 0 60px 0 20px;
+  border: 1px solid black;
+}
+
+.input__value__delete {
+  font-size: 16px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 13px;
+  right: 20px;
+  filter: invert(100%);
+  -webkit-filter: invert(100%);
+  cursor: pointer;
+}
+
+.input__value__delete:hover {
+  filter: invert(90%);
+  -webkit-filter: invert(90%);
+}
+
+
+.modal__window {
+  width: 100%;
+  height: 400px;
+
+  overflow: auto;
+}
+
+.modal__window__item {
+  width: 100%;
+  height: 50px;
+  font-size: 22px;
+  padding: 0 20px;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+}
+
+.modal__window__item:hover {
+  background-color: rgba(0, 0, 0, 0.122);
+}
